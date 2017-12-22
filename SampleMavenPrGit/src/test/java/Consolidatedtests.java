@@ -26,7 +26,7 @@ public class Consolidatedtests {
  String userid = null;
  String password = null;
  String email = null;
- 
+
 	@BeforeClass
 	void beforetestfunction() throws IOException {
 	InputStream fis = Consolidatedtests.class.getClassLoader().getResourceAsStream("config.properties");;
@@ -43,7 +43,6 @@ public class Consolidatedtests {
 	String baseURL = url;
 	driver.navigate().to(baseURL);
 	}
-	
 	@Test(priority=2,singleThreaded= true)
   public void firstfunction() throws InterruptedException {
 	WebElement element1 = driver.findElement(By.name("email"));

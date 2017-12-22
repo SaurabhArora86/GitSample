@@ -43,7 +43,6 @@ public class NewTest {
 	driver.findElement(By.xpath("//*[@id='loginbutton']")).click();
 	System.out.println("secondmethod function");
 	}
-
 	@AfterTest
 	void finalfunction2() {
 	driver.quit();
