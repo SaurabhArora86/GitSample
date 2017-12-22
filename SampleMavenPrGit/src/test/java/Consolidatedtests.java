@@ -36,7 +36,7 @@ public class Consolidatedtests {
 	userid = System.getenv("userid");
 	password = System.getenv("password");
 	System.out.println("Password : "+password);
-	email = prop.getProperty("email");
+	    email = prop.getProperty("email");
 	System.setProperty("webdriver.chrome.driver", "D:\\Projects\\Selenium Work\\chromedriver.exe");
 	driver = new ChromeDriver();
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
